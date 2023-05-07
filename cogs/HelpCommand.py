@@ -27,6 +27,7 @@ class HelpCommand(commands.Cog):
         help_embed.add_field(name=f'**{command_prefix}RPS(Rock Paper Scissors):**',value='returns rock/paper/scissors',inline=False)
         help_embed.add_field(name=f'**{command_prefix}RNG(Random Number Generator):**',value='returns a random number 0 to 100',inline=False)
         help_embed.add_field(name=f'**{command_prefix}flip_a_coin:**',value='returns a random number 0 to 100',inline=False)
+        help_embed.add_field(name='**Auto logg**',value='Setup a channel named log-channel for auto logging to work!',inline=False)
         help_embed.add_field(name='**embed:**',value='to be updated',inline=False)
         help_embed.add_field(name='**Do\'nt Dm the bot**',value='**you will be disapointed**')
 
