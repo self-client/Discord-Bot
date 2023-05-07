@@ -10,7 +10,7 @@ client = commands.Bot(command_prefix=f'{c_prefix}',intents=discord.Intents.all()
 
 client.remove_command("help")
 
-TOKEN='MTA2NDUxNjgxNjI3NTI1NTM1Nw.G09Jxq.ARAL37DFmLTVYKiy4rL3Sq42Zhv4vewZyBtZAs'
+TOKEN='your_token'
 
 @client.event
 async def on_ready():
@@ -18,7 +18,7 @@ async def on_ready():
     print('==========================')
     change_status.start()
 
-bot_status = cycle([f'{c_prefix}help','Goenka Tech Fest','created by Goenkan IT Team','idling'])
+bot_status = cycle([f'{c_prefix}help'])
 
 @tasks.loop(seconds=30)
 async def change_status():
