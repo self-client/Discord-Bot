@@ -16,7 +16,7 @@ class HelpCommand(commands.Cog):
 
         help_embed =  discord.Embed(title='Help desk for Goenka Tech Fest',description='All commands for the bot.',color=discord.Color.random())
 
-        help_embed.set_author(name='Goenka Tech Fest')
+        help_embed.set_author(name='')
         help_embed.add_field(name=f'**{command_prefix}Ping:**',value='returns the latency of the bot.',inline=False)
         help_embed.add_field(name=f'**{command_prefix}clear msg_count:**',value='Deletes a specified amount of messages.',inline=False)
         help_embed.add_field(name=f'**{command_prefix}kick id/@:**',value='Kicks a user from guild/server.',inline=False)
