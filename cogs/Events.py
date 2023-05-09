@@ -34,6 +34,15 @@ class Events(commands.Cog):
         event_embed.add_field(name='User ID:',value=member.id,inline=False)
 
         await log_channel.send(embed=event_embed)
-    
+        
+        @commands.cog.listener()
+        async def on_member_remove(self,member):
+            log_channel =  discord.utils.get(member.guilds.channels,name='log-channel')
+            
+            event_embed = discord.Embed(title='Deaprture Logged',description='**This user left the server!**',color=discord.Color.red())
+            event_embed.add_field(name='User Left:',value=member.mention,inline=False)
+            
+            await log_channel.send(embed=event_embed)
+            
 async def setup(client):
     await client.add_cog(Events(client))
